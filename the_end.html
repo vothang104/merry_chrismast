@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Pushster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./the_end.css">
+    <title>The end</title>
+</head>
+<body>
+    <div class="app">
+        <audio hidden autoplay id="audio" src="./sound/nhac_noel.mp3"></audio>
+        <div class="modal">
+            <p class="modal__text">The End</p>
+            <img src="./img/dacat.png" alt="" class="face-woman">
+            <img src="./img/thang.jpg" alt="" class="face-man">
+        </div>
+        <div class="container">
+            <img src="./img/the_end.gif" alt="" class="container__background">
+        </div>
+    </div>
+    <script>
+        const modal = document.querySelector('.modal');
+        setTimeout(() => {
+            modal.style = `transform: translateY(0)`;  
+        }, 2000);
+    </script>
+</body>
+</html>

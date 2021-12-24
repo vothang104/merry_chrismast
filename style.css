@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Imperial Script', cursive;
+    font-family: 'Pushster', cursive;
+    font-size: 62.5%;
+} 
+.modal {
+    position: fixed;
+    z-index: 5;
+    inset: 0;
+    background-image: linear-gradient(to bottom right, rgb(250, 132, 151), pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+.modal__text {
+    width: 70%;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    word-spacing: 3px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.modal__btn {
+    outline: none;
+    border: none;
+    background-color: rgb(240, 77, 104);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 0 5px 2px rgb(240, 77, 104);
+}
+.container {
+    position: relative;
+    max-width: 400px;
+    height: 100vh;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 90% 0;
+}
+.message {
+    position: absolute;
+    top: 24%;
+    right: 20%;
+    width: 110px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    opacity: 0;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in;
+}
+.message::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    transform: rotate(45deg) translate(50%);
+    background-color: #fff;
+}
+/* ông già noel cưỡi tuần lộc */
+.modal__Santa-Claus1 {
+    position: fixed;
+    z-index: 6;
+    inset: 0;
+}
+.modal__Santa-Claus1__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.modal__Santa-Claus__ridding1 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 15%;
+    animation: chayqua1 5s linear forwards;
+}
+@keyframes chayqua1 {
+    0% {
+    transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(-200%);
+    }
+}
+.modal__Santa-Claus__ridding2 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 15%;
+    transform: translateX(-100%);
+    animation: chayqua2 5s linear 5.5s forwards;
+}
+@keyframes chayqua2 {
+    0% {
+    transform: translateX(-100%);
+    }
+    100% {
+    transform: translateX(200%);
+    }
+}
+/* cảnh 2 */
+.modal__Santa-Claus2 {
+    position: fixed;
+    z-index: 6;
+    inset: 0;
+}
+.modal__Santa-Claus2__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.modal__Santa-Claus2__ridding {
+    position: absolute;
+    height: 15%;
+    top: 25%;
+    left: 25%;
+    transform: skew(23deg, 341deg);
+    transition: all linear 3s;
+}
+.modal__Santa-Claus2__message {
+    position: absolute;
+    width: 35%;
+    right: 15%;
+    top: 10%;
+    font-size: 1.4ewm;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.modal__Santa-Claus2__message::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    bottom: 0;
+    right: 5%;
+    transform: rotate(45deg) translateY(40%);
+}
